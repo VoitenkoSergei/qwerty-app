@@ -177,14 +177,15 @@ header img {
 .presentation {
   background: url(../images/oldcar.jpg) no-repeat;
   background-size: 100%;
+  background-position-y: center;
   color: #fff;
 }
 .presentation h1 {
-  padding-top: 10%;
+  padding-top: 5%;
   margin-left: 50px;
 }
 .presentation p {
-  padding-bottom: 10%;
+  padding-bottom: 15%;
   margin-left: 50px;
   font-size: 12px;
 }
