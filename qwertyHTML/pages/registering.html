@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Features cars</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="shourtcut icon" type="image/png" href="../images/logo.png">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="icon">
+							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<div class="col-md-4 tel">
+						<span>GIVE US A CALL: +38(044)3218906</span>
+					</div>
+					<div class="col-md-4 login">
+						<span>
+							<a href="#" id="upload">LOGIN</a> |
+							<a href="#">REGISTER</a>
+						</span>
+						<div id="login_sub" class="sub">
+							<form>
+								<p>Please enter your Login and Password</p>
+								<label>
+									<input type="text" name="login" placeholder="LOGIN" required>
+								</label>
+								<label>
+									<input type="password" name="last-name" placeholder="PASSWORD" required>
+								</label>
+								<label>
+									<input type="submit" name="" value="LOG IN">
+								</label>
+								<p>Lorem ipsum dolor sit amet,<br>
+									consectetur adipisicing elit.
+								</p>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 nav_bar_menu">
+						<nav>
+							<ul class="menu">
+								<li><a href="../index.html">HOME</a></li>
+								<li class="sub-menu"><a href="#">CATEGORIES</a>
+									<ul class="main-sub-menu">
+										<li><a href="#">Sport</a></li>
+										<li><a href="#">Retro</a></li>
+										<li><a href="#">Classic</a></li>
+									</ul>
+								</li>
+								<li><a href="#">DEALERS</a></li>
+								<li><a href="#">CONTACT</a></li>
+								<li><a href="#">POST NEW CAR</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="registering">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>Registration</h1>
+						<h3>JOIN THE COMMUNITY</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<form>
+							<div class="row">
+								<div class="col-md-6">
+									<label>
+										<p>Имя:</p>
+										<input type="text" placeholder="Введите Имя" required>
+									</label>
+								</div>
+								<div class="col-md-6">
+									<label>
+										<p>Фамилия:</p>
+										<input type="text" placeholder="Введите Фамилию" required>
+									</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<label>
+										<p>Пол:</p>
+										<input type="radio" checked name="gender">мужской 
+										<input type="radio" name="gender">женский
+									</label>
+								</div>
+								<div class="col-md-6">
+									<label>
+										<div class="block_date">
+											<p>День рождения:</p>
+											<input type="number" min="1" max="31" class="day" value="1">
+											<select>
+												<option value="">январь</option>
+												<option value="">февраль</option>
+												<option value="">март</option>
+												<option value="">апрель</option>
+												<option value="">май</option>
+												<option value="">июнь</option>
+												<option value="">июль</option>
+												<option value="">август</option>
+												<option value="">сентябрь</option>
+												<option value="">октябрь</option>
+												<option value="">ноябрь</option>
+												<option value="">декабрь</option>
+											</select>
+											<input type="number" min="1970" max="2010" class="year" value="1970">
+										</div>
+									</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<label>
+										<p>Имя пользователя:</p>
+										<input type="text" placeholder="Введите текст" required>
+									</label>
+								</div>
+								<div class="col-md-6">
+									<label>
+										<p>Электронная почта:</p>
+										<input type="email" placeholder="Введите E-mail" required>
+									</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<label>
+										<p>Пароль:</p>
+										<input type="password" placeholder="Введите пароль">
+									</label>
+								</div>
+								<div class="col-md-6">
+									<label>
+										<p>Повторите пароль:</p>
+										<input type="password" placeholder="Введите пароль">
+									</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">		
+									<label>
+										<input type="checkbox" checked>Оформить подписку
+									</label>
+								</div>
+								<div class="col-md-6">
+									<label>
+										<button type="submit">Регистрация</button>
+									</label>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="back_home">
+							<i class="fa fa-hand-o-right" aria-hidden="true"></i>
+							<a href="../index.html">Назад</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<footer>
+		<div class="container-fluid">
+			<div class="row footer_elements">
+				<div class="col-md-6">&copy;Copyright 2018 | Privacy | Policy</div>
+				<div class="col-md-6">Designed for: <span>qwerty.software</span></div>
+			</div>
+		</div>
+	</footer>
+	<script src="../script/main.js"></script>
+</body>
+</html>
