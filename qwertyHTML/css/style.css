@@ -324,7 +324,18 @@ footer span {
   color: orange;
   font-weight: bold;
 }
+@media screen and (max-width: 980px) {
+  body .features .cars div:nth-child(1) {
+    background-size: 130%;
+  }
+  body .features .cars div:nth-child(3) {
+    background-size: 130%;
+  }
+}
 @media screen and (max-width: 768px) {
+  body h2 {
+    font-size: 28px;
+  }
   body header nav .menu li {
     display: block;
   }
@@ -342,8 +353,15 @@ footer span {
     padding-top: 0;
     padding-bottom: 0;
   }
+  body .presentation img {
+    width: 100px;
+  }
   body .features .cars div:nth-child(1) {
-    background-position-y: bottom;
+    background-position-y: 65%;
+    background-size: 100%;
+  }
+  body .features .cars div:nth-child(3) {
+    background-size: 100%;
   }
   body .features .newsletter {
     background: none;
@@ -358,6 +376,6 @@ footer span {
   }
   body .features .newsletter div:last-child {
     width: 100% !important;
-    background-size: 130%;
+    background-size: 140%;
   }
 }
