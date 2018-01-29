@@ -10,6 +10,7 @@ body, html{
 	user-select: none;
 }
 header{
+	background: #fff;
 	.icon{
 		margin-left: 20px;
 	}
@@ -130,9 +131,13 @@ header{
 		margin-left: 40px;
 	}
 }
-.registering{
-	background: -webkit-linear-gradient(rgba(128, 128, 128, 0.6), rgba(128, 128, 128, 0.6)), url("../images/porche.jpg") no-repeat;
+#page_register{
+	background: -webkit-linear-gradient(rgba(128, 128, 128, 0.6), rgba(128, 128, 128, 0.6)), url(../images/porche.jpg) no-repeat;
 	background-attachment: fixed;
+	background-size: cover;
+	background-position-x: center;
+}
+.registering{
 	h1{
 		color: #fff;
 		text-align: center;
@@ -153,6 +158,7 @@ header{
 		padding-top: 30px;
 		.block_date{
 			width: 220px;
+			padding-left: 20px;
 			input{
 				width: 45px;
 			}
@@ -169,12 +175,12 @@ header{
 		.row:last-child{
 			padding: 20px 0;
 		}
+		p{
+			margin: 10px 0 0 21px;
+		}
 		label{
 			padding-left: 20px;
 			width: 100%;
-			p{
-				margin: 10px 0 0 0;
-			}
 		}
 	}
 	.back_home{
@@ -363,7 +369,7 @@ footer{
 
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
 	body{
 		h2{
 			font-size: 28px;

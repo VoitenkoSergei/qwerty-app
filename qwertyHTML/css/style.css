@@ -8,6 +8,9 @@ html {
   margin: 0;
   user-select: none;
 }
+header {
+  background: #fff;
+}
 header .icon {
   margin-left: 20px;
 }
@@ -124,9 +127,11 @@ header img {
   margin-top: -15px;
   margin-left: 40px;
 }
-.registering {
-  background: -webkit-linear-gradient(rgba(128, 128, 128, 0.6), rgba(128, 128, 128, 0.6)), url("../images/porche.jpg") no-repeat;
+#page_register {
+  background: -webkit-linear-gradient(rgba(128, 128, 128, 0.6), rgba(128, 128, 128, 0.6)), url(../images/porche.jpg) no-repeat;
   background-attachment: fixed;
+  background-size: cover;
+  background-position-x: center;
 }
 .registering h1 {
   color: #fff;
@@ -149,6 +154,7 @@ header img {
 }
 .registering form .block_date {
   width: 220px;
+  padding-left: 20px;
 }
 .registering form .block_date input {
   width: 45px;
@@ -165,12 +171,12 @@ header img {
 .registering form .row:last-child {
   padding: 20px 0;
 }
+.registering form p {
+  margin: 10px 0 0 21px;
+}
 .registering form label {
   padding-left: 20px;
   width: 100%;
-}
-.registering form label p {
-  margin: 10px 0 0 0;
 }
 .registering .back_home {
   padding: 2px;
@@ -343,7 +349,7 @@ footer span {
     background-size: 130%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   body h2 {
     font-size: 28px;
   }

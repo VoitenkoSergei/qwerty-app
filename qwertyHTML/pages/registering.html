@@ -11,7 +11,7 @@
 	<link rel="icon" type="image/png" href="../images/logo.png">
 </head>
 <body>
-	<div class="wrapper">
+	<div class="wrapper" id="page_register">
 		<header>
 			<div class="container-fluid">
 				<div class="row">
@@ -89,22 +89,22 @@
 						<form>
 							<div class="row">
 								<div class="col-md-6">
+									<p>Имя:</p>
 									<label>
-										<p>Имя:</p>
 										<input type="text" placeholder="Введите Имя" required>
 									</label>
 								</div>
 								<div class="col-md-6">
+									<p>Фамилия:</p>
 									<label>
-										<p>Фамилия:</p>
 										<input type="text" placeholder="Введите Фамилию" required>
 									</label>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-6">
+									<p>Пол:</p>
 									<label>
-										<p>Пол:</p>
 										<input type="radio" checked name="gender">мужской
 									</label>
 									<label> 
@@ -112,53 +112,51 @@
 									</label>
 								</div>
 								<div class="col-md-6">
-									<label>
-										<div class="block_date">
-											<p>День рождения:</p>
-											<input type="number" min="1" max="31" class="day" value="1">
-											<select>
-												<option value="">январь</option>
-												<option value="">февраль</option>
-												<option value="">март</option>
-												<option value="">апрель</option>
-												<option value="">май</option>
-												<option value="">июнь</option>
-												<option value="">июль</option>
-												<option value="">август</option>
-												<option value="">сентябрь</option>
-												<option value="">октябрь</option>
-												<option value="">ноябрь</option>
-												<option value="">декабрь</option>
-											</select>
-											<input type="number" min="1970" max="2010" class="year" value="1970">
-										</div>
-									</label>
+									<div class="block_date">
+										<p>День рождения:</p>
+										<input type="number" min="1" max="31" class="day" value="1">
+										<select>
+											<option value="">январь</option>
+											<option value="">февраль</option>
+											<option value="">март</option>
+											<option value="">апрель</option>
+											<option value="">май</option>
+											<option value="">июнь</option>
+											<option value="">июль</option>
+											<option value="">август</option>
+											<option value="">сентябрь</option>
+											<option value="">октябрь</option>
+											<option value="">ноябрь</option>
+											<option value="">декабрь</option>
+										</select>
+										<input type="number" min="1970" max="2010" class="year" value="1970">
+									</div>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-6">
+									<p>Имя пользователя:</p>
 									<label>
-										<p>Имя пользователя:</p>
 										<input type="text" placeholder="Введите текст" required>
 									</label>
 								</div>
 								<div class="col-md-6">
+									<p>Электронная почта:</p>									
 									<label>
-										<p>Электронная почта:</p>
 										<input type="email" placeholder="Введите E-mail" required>
 									</label>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-6">
+									<p>Пароль:</p>
 									<label>
-										<p>Пароль:</p>
 										<input type="password" placeholder="Введите пароль">
 									</label>
 								</div>
 								<div class="col-md-6">
+									<p>Повторите пароль:</p>
 									<label>
-										<p>Повторите пароль:</p>
 										<input type="password" placeholder="Введите пароль">
 									</label>
 								</div>
