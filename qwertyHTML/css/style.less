@@ -65,7 +65,14 @@ header{
 	}
 	nav{
 		background-color: @gray !important;
+		padding: 0 !important;
+		button{
+			background: #fff !important;
+			margin: 7px 16px;
+			padding: .2rem .6rem !important;
+		}
 		.menu{
+			width: 100%;
 			text-align: center;
 			padding: 0;
 			margin: 0;
@@ -146,7 +153,7 @@ header{
 		padding-top: 30px;
 		.block_date{
 			width: 220px;
-			input:first-child{
+			input{
 				width: 45px;
 			}
 			input:last-child{
@@ -154,7 +161,7 @@ header{
 			}
 		}
 		select{
-			width: 80px;
+			width: 81px;
 			padding: 3px 0;
 			border: none;
 			background: #fff;
@@ -337,6 +344,11 @@ footer{
 }
 @media screen and (max-width: 980px){
 	body{
+		.presentation{
+			img{
+				width: 100px;
+			}
+		}
 		.features{
 			.cars{
 				div:nth-child(1){
@@ -380,7 +392,7 @@ footer{
 				padding-bottom: 0;
 			}
 			img{
-				width: 100px;
+				width: 90px;
 			}
 		}
 		.features{
@@ -406,6 +418,15 @@ footer{
 					width: 100% !important;
 					background-size: 140%;
 				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 380px){
+	body{
+		.presentation{
+			img{
+				width: 60px;
 			}
 		}
 	}
