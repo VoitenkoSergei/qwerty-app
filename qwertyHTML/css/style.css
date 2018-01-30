@@ -156,6 +156,9 @@ header img {
   width: 220px;
   padding-left: 20px;
 }
+.registering form .block_date p {
+  margin-left: 0;
+}
 .registering form .block_date input {
   width: 45px;
 }
@@ -177,6 +180,11 @@ header img {
 .registering form label {
   padding-left: 20px;
   width: 100%;
+}
+.registering form input[type="text"],
+.registering form input[type="password"],
+.registering form input[type="email"] {
+  width: 195px;
 }
 .registering .back_home {
   padding: 2px;
