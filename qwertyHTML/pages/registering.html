@@ -56,6 +56,10 @@
 							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
 								<span class="navbar-toggler-icon"></span>
 							</button>
+							<button type="button" id="burger" class="btn btn-info navbar-btn">
+								<i class="glyphicon glyphicon-align-left"></i>
+								SideBar
+							</button>
 							<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 								<ul class="menu">
 									<li><a href="../index.html">HOME</a></li>
@@ -76,58 +80,98 @@
 				</div>
 			</div>
 		</header>
+		<div class="wrapper_sidebar">
+			<nav id="sidebar">
+				<div id="changeView" class="setting">
+					<form>
+						<h3>Settings</h3>
+						<span>Change font size(8-24px):</span>
+						<label>
+							<input type="text" name="size" placeholder="" value="14" maxlength="2" minlength="1">
+						</label>
+						<input type="submit" name="submit" value="ok!" class="submit">
+						<div id="error"></div>
+						<span>Change font family:</span>
+						<label>
+							<select name="family">
+								<option>default</option>
+								<option>Cardo-Regular</option>
+								<option>IndieFlower</option>
+								<option>NovaFlat</option>
+								<option>Courgette</option>
+							</select>
+						</label><br>
+						<span>Change background color:</span>
+						<label>
+							<input type="color" name="color" value="#ffffff">
+						</label><br>
+						<span>Remove last item:</span>
+						<input type="button" name="button" value="Remove">
+						<div id="status"></div>
+					</form>
+				</div>
+			</nav>
+			<div id="content">
+				<section class="registering">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<h1>Registration</h1>
+								<h4>JOIN THE COMMUNITY</h4>
+								<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dignissimos provident officia itaque officiis, enim facere voluptatum ullam corporis iusto.</p>
+								<hr>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
 		<section class="registering">
 			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-12">
-						<h1>Registration</h1>
-						<h3>JOIN THE COMMUNITY</h3>
-					</div>
-				</div>
 				<div class="row">
 					<div class="col-md-12">
 						<form>
 							<div class="row">
 								<div class="col-md-6">
-									<p>Имя:</p>
+									<p>First Name:</p>
 									<label>
-										<input type="text" placeholder="Введите Имя" required>
+										<input type="text" placeholder="Enter your name" required>
 									</label>
 								</div>
 								<div class="col-md-6">
-									<p>Фамилия:</p>
+									<p>Surname:</p>
 									<label>
-										<input type="text" placeholder="Введите Фамилию" required>
+										<input type="text" placeholder="Enter your surname" required>
 									</label>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-6">
-									<p>Пол:</p>
+									<p>Gender:</p>
 									<label>
-										<input type="radio" checked name="gender">мужской
+										<input type="radio" checked name="gender">male
 									</label>
 									<label> 
-										<input type="radio" name="gender">женский
+										<input type="radio" name="gender">famale
 									</label>
 								</div>
 								<div class="col-md-6">
 									<div class="block_date">
-										<p>День рождения:</p>
+										<p>Date of Birth:</p>
 										<input type="number" min="1" max="31" class="day" value="1">
 										<select>
-											<option value="">январь</option>
-											<option value="">февраль</option>
-											<option value="">март</option>
-											<option value="">апрель</option>
-											<option value="">май</option>
-											<option value="">июнь</option>
-											<option value="">июль</option>
-											<option value="">август</option>
-											<option value="">сентябрь</option>
-											<option value="">октябрь</option>
-											<option value="">ноябрь</option>
-											<option value="">декабрь</option>
+											<option value="">January</option>
+											<option value="">February</option>
+											<option value="">March</option>
+											<option value="">April</option>
+											<option value="">May</option>
+											<option value="">June</option>
+											<option value="">July</option>
+											<option value="">August</option>
+											<option value="">September</option>
+											<option value="">October</option>
+											<option value="">November</option>
+											<option value="">December</option>
 										</select>
 										<input type="number" min="1970" max="2010" class="year" value="1970">
 									</div>
@@ -135,41 +179,41 @@
 							</div>
 							<div class="row">
 								<div class="col-md-6">
-									<p>Имя пользователя:</p>
+									<p>Username:</p>
 									<label>
-										<input type="text" placeholder="Введите текст" required>
+										<input type="text" placeholder="Enter your username" required>
 									</label>
 								</div>
 								<div class="col-md-6">
-									<p>Электронная почта:</p>									
+									<p>Email:</p>									
 									<label>
-										<input type="email" placeholder="Введите E-mail" required>
+										<input type="email" placeholder="Enter your E-mail" required>
 									</label>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-6">
-									<p>Пароль:</p>
+									<p>Password:</p>
 									<label>
-										<input type="password" placeholder="Введите пароль">
+										<input type="password" placeholder="Enter your password">
 									</label>
 								</div>
 								<div class="col-md-6">
-									<p>Повторите пароль:</p>
+									<p>Confirm password:</p>
 									<label>
-										<input type="password" placeholder="Введите пароль">
+										<input type="password" placeholder="Confirm password">
 									</label>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-6">		
 									<label>
-										<input type="checkbox" checked>Оформить подписку
+										<input type="checkbox" checked>Subscribe now
 									</label>
 								</div>
 								<div class="col-md-6">
 									<label>
-										<button type="submit">Регистрация</button>
+										<button type="submit">Register</button>
 									</label>
 								</div>
 							</div>

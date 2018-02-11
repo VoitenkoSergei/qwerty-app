@@ -1,5 +1,30 @@
 @gray: #525252;
 @blue: #0065ec;
+@green:#00cc00;
+@font-face{
+	font-family: 'Cardo-Regular';
+	src: url(../fonts/Cardo-Regular.ttf);
+}
+@font-face{
+	font-family: IndieFlower;
+	src: url(../fonts/IndieFlower.ttf);
+}
+@font-face{
+	font-family: NovaFlat;
+	src: url(../fonts/NovaFlat.ttf);
+}
+@font-face{
+	font-family: 'Courgette-Regular';
+	src: url(../fonts/Courgette-Regular.ttf);
+}
+@keyframes slide-down{
+	from{
+		transform: translateX(-100%);
+	}
+	to{
+		transform: translateX(0);
+	}
+}
 *{
 	box-sizing: content-box;
 }
@@ -32,7 +57,7 @@ header{
 			left: 0;
 			margin: 0 auto;
 			width: 100%;
-			z-index: 1;
+			z-index: 3;
 			form{
 				color: #fff;
 				text-align: center;
@@ -67,6 +92,7 @@ header{
 	nav{
 		background-color: @gray !important;
 		padding: 0 !important;
+		z-index: 2;
 		button{
 			background: #fff !important;
 			margin: 7px 16px;
@@ -145,17 +171,27 @@ header{
 		font-size: 30px;
 		margin-top: 30px;
 	}
-	h3{
+	h4{
 		text-align: center;
 		font-size: 30px;
 		color: #fff;
 		font-weight: 600;
 	}
+	.description{
+		color: #fff;
+		padding: 50px 0px 0px;
+		margin-left: 15%;
+		margin-right: 15%;
+		text-align: center;
+	}
+	hr{
+		width: 50%;
+		background: #fff;
+	}
 	form{
 		color:#fff;
 		width: 60%;
 		margin: 0 auto;
-		padding-top: 30px;
 		.block_date{
 			width: 220px;
 			padding-left: 20px;
@@ -201,8 +237,9 @@ header{
 }
 .presentation{
 	background: url(../images/oldcar.jpg) no-repeat;
-	background-size: 100%;
+	background-size: cover;
 	background-position-y: center;
+	min-height: 487px;
 	color: #fff;
 	h1{
 		padding-top: 5%;
@@ -214,6 +251,38 @@ header{
 		font-size: 12px;
 	}
 }
+.setting{
+	background: @gray;
+	form{
+		display: none;
+		padding-bottom: 10px;
+		span{
+			color: #fff;
+			margin: 10px;
+		}
+		label{
+			margin-left: 10px;
+			width: 50%;
+			input{
+				width: 100%;
+			}
+			input[name="color"]{
+				height: 2em;
+				width: 2em;
+			}
+		}
+	}
+	.hide{
+		display: block;
+		animation: slide-down .8s ease-out;
+	}
+	#error, #status{
+		span{
+			color:@green;
+		}
+	}
+}
+
 .features{
 	h2{
 		text-align: center;
@@ -225,6 +294,7 @@ header{
 		border-bottom: 1px solid #ececec;
 		div{
 			text-align: center;
+			background: #fff;
 			h3{
 				padding-top: 25px;
 			}
@@ -243,13 +313,13 @@ header{
 		}
 		div:nth-child(1){
 			background: url(../images/featurporch.jpg) no-repeat;
-			background-size: 100%;
+			background-size: cover;
 			background-position-y: bottom; 
 			min-height: 276px;
 		}
 		div:nth-child(3){
 			background: url(../images/featurporch1.jpg) no-repeat;
-			background-size: 100%;
+			background-size: cover;
 			background-position-y: center;
 			min-height: 276px;
 		}
@@ -257,27 +327,25 @@ header{
 	.newsletter{
 		margin-top: 50px;
 		margin-bottom: 50px;
-		background: url(../images/border.png) no-repeat;
-		background-size: 40%;
-		background-position-x: 15%;
+		background: #fff url(../images/border.png) no-repeat;
+		background-size: 48%;
+		background-position-x: 3%;
 		background-position-y: center;
 		h3{
 			padding-top: 70px;
-			margin-left: 15%;
 		}
 		p{
 			font-size: 12px;
-			padding-top: 20px;
+			padding: 20px 40px 0 0;
 			padding-bottom: 70px;
-			margin-left: 15%;
 		}
 		div:first-child{
 			padding: 60px;
 		}
-		div:last-child{
+		.subscribe{
 			width: 49% !important;
 			background: url(../images/newsletter.jpg) no-repeat;
-			background-size: 100%;
+			background-size: cover;
 			min-height: 430px;
 		}
 		form{
@@ -340,39 +408,22 @@ header{
 .wrapper_sidebar{
 	display: flex;
 	#sidebar {
-		min-width: 149px;
-		max-width: 149px;
-		margin-left: -149px;
+		min-width: 250px;
+		max-width: 250px;
+		margin-left: -250px;
 		color: #000;
 		background: @gray;
 		transition: all 0.3s;
-		h3{
-			font-size: 16px;
-			padding:10px;
-			color:#fff;
-			background: linear-gradient(to top, #000, gray);
-		}
-		ul{
-			margin: 0;
-			li{
-				a{
-					padding: 10px;
-					display: block;
-					text-decoration: none;
-					color:#fff;
-				}
-				a:hover{
-					padding-left: 20px;
-					color:#000;
-					background: linear-gradient(to top,#525252, white 40%, white 60%, #525252);
-					transition: 0.3s;
-				}
-			}
-		}
+		z-index: 1;
 	}
-
+	h3{
+		font-size: 16px;
+		padding:10px;
+		color:#fff;
+		background: linear-gradient(to top, #000, gray);
+	}
 }
-#sidebarCollapse{
+#burger{
 	color: #fff;
 	background: @gray !important;
 }
@@ -381,6 +432,11 @@ header{
 }
 #sidebar.active {
 	margin-left: 0px;
+}
+section{
+	.status{
+		color: blue;
+	}
 }
 
 footer{
@@ -403,19 +459,14 @@ footer{
 @media screen and (max-width: 980px){
 	body{
 		.presentation{
-			background-size: 110%;
+			min-height: 394px;
 			img{
 				width: 100px;
 			}
 		}
 		.features{
-			.cars{
-				div:nth-child(1){
-					background-size: 130%
-				}
-				div:nth-child(3){
-					background-size: 130%
-				}
+			.newsletter{
+				background: none;
 			}
 		}
 	}
@@ -448,7 +499,7 @@ footer{
 			#sidebar{
 				min-width: 100%;
 				max-width: 100%;
-				margin-top: -287px;
+				margin-top: 0;
 				margin-left: 0;
 			}
 			#sidebar.active {
@@ -457,6 +508,7 @@ footer{
 		}
 		.presentation{
 			background-size: 160%;
+			min-height: 276px;
 			background-position-y: center;
 			background-position-x: center;
 			h1, p{
@@ -480,7 +532,7 @@ footer{
 			.newsletter{
 				background: none;
 				h3,p{
-					padding-top: 20px;
+					padding: 20px 0 0 0;
 					margin-left: 0;
 				}
 				p{
@@ -497,6 +549,7 @@ footer{
 @media screen and (max-width: 380px){
 	body{
 		.presentation{
+			background-size: cover;
 			img{
 				width: 60px;
 			}
