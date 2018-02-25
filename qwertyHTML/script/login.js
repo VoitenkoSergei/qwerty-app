@@ -83,13 +83,16 @@
 	function renderSetting(key = 'setting'){
 		let setting = JSON.parse(localStorage.getItem(key));
 		let section = document.getElementsByTagName('section');
-		for(let i=0; i<section.length; i++){
-			let elem = section[i].getElementsByTagName('p');
-			section[i].style.fontFamily=setting.fontFamily;
-			for(let j=0; j<elem.length; j++){
-				elem[j].style.fontSize = setting.fontSize;
+		if(setting!==null){
+			for(let i=0; i<section.length; i++){
+				let elem = section[i].getElementsByTagName('p');
+				section[i].style.fontFamily=setting.fontFamily;
+				for(let j=0; j<elem.length; j++){
+					elem[j].style.fontSize = setting.fontSize;
+				}
 			}
 		}
+		return;
 	}
 	function renderStatus(){
 		if(localStorage.status){
