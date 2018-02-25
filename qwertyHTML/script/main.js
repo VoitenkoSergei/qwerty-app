@@ -12,6 +12,7 @@
 	    remove = document.querySelector('input[name="button"]'),
 	    status = document.getElementById('status'),
 	    error = document.getElementById('error');   
+	let obj = {};
 
 	form.onsubmit = function(e){
 		e.preventDefault();
@@ -22,6 +23,8 @@
 		size = parseInt(size);
 		if(size>7 && size<25 && size!=null && !isNaN(size)){
 			err.innerHTML='<span>Ok! Your font size: '+size+'px</span>';
+			obj.fontSize = size+'px';
+			stringifyObj();
 			for(let i=0; i<section.length; i++){
 				let elem = section[i].getElementsByTagName('p');
 				for(let j=0; j<elem.length; j++){
@@ -56,6 +59,8 @@
 		for(let j=0; j<section.length; j++){
 			section[j].style.fontFamily=value;
 		}
+		obj.fontFamily = value;
+		stringifyObj();
 	}
 	function changeColorBg(color){
 		color.onchange=function(){
@@ -82,4 +87,10 @@
 	}
 	changeFontFamily(select);
 	changeColorBg(color);
+
+	function stringifyObj(){
+		let serial = JSON.stringify(obj);
+		let key = 'setting';
+		localStorage.setItem('setting', serial);
+	}
 })();

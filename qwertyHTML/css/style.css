@@ -48,8 +48,14 @@ header .login {
   position: relative;
   background: whitesmoke;
 }
-header .login span {
+header .login span:nth-child(2) {
   margin-right: 40px;
+}
+header .login #login {
+  display: block;
+}
+header .login #logout {
+  display: none;
 }
 header .login #login_sub {
   position: absolute;
@@ -81,6 +87,9 @@ header .login #login_sub form p:first-child {
 }
 header .login #login_sub form p:last-child {
   font-size: 12px;
+}
+header .login #login_sub form #errLogin {
+  background: #000;
 }
 header .login .sub {
   display: none;
@@ -220,6 +229,10 @@ header img {
 .registering form input[type="password"],
 .registering form input[type="email"] {
   width: 195px;
+}
+.registering #result {
+  text-align: center;
+  background-color: #000;
 }
 .registering .back_home {
   padding: 2px;
@@ -398,6 +411,7 @@ header img {
   display: flex;
 }
 .wrapper_sidebar #sidebar {
+  display: none;
   min-width: 250px;
   max-width: 250px;
   margin-left: -250px;
@@ -413,6 +427,7 @@ header img {
   background: linear-gradient(to top, #000, gray);
 }
 #burger {
+  visibility: hidden;
   color: #fff;
   background: #525252 !important;
 }

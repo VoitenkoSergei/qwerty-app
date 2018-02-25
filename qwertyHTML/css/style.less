@@ -48,8 +48,14 @@ header{
 		text-align: right;
 		position: relative;
 		background: whitesmoke;
-		span{
+		span:nth-child(2){
 			margin-right: 40px;
+		}
+		#login{
+			display: block;
+		}
+		#logout{
+			display: none;
 		}
 		#login_sub{
 			position: absolute;
@@ -79,6 +85,9 @@ header{
 				}
 				p:last-child{
 					font-size: 12px;
+				}
+				#errLogin{
+					background: #000;
 				}
 			}
 		}
@@ -224,6 +233,10 @@ header{
 		input[type="text"], input[type="password"], input[type="email"]{
 			width: 195px;
 		}
+	}
+	#result{
+		text-align: center;
+		background-color: #000;
 	}
 	.back_home{
 		padding: 2px;
@@ -408,6 +421,7 @@ header{
 .wrapper_sidebar{
 	display: flex;
 	#sidebar {
+		display: none;
 		min-width: 250px;
 		max-width: 250px;
 		margin-left: -250px;
@@ -424,6 +438,7 @@ header{
 	}
 }
 #burger{
+	visibility: hidden;
 	color: #fff;
 	background: @gray !important;
 }

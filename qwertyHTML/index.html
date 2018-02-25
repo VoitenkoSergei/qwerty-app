@@ -26,25 +26,35 @@
 						<span>GIVE US A CALL: +38(044)3218906</span>
 					</div>
 					<div class="col-md-4 login">
+						<div id="login">
 						<span>
 							<a href="#" id="upload">LOGIN</a> |
+						</span>
+						<span>
 							<a href="./pages/registering.html">REGISTER</a>
 						</span>
+					</div>
+						<div id="logout">
+							<span>
+							<a href="#" id="out">LOGOUT</a> | 
+							</span>
+						</div>
 						<div id="login_sub" class="sub">
 							<form>
 								<p>Please enter your Login and Password</p>
 								<label>
-									<input type="text" name="login" placeholder="LOGIN" required>
+									<input id="auth_login" type="text" name="login" placeholder="LOGIN" required>
 								</label>
 								<label>
-									<input type="password" name="last-name" placeholder="PASSWORD" required>
+									<input id="auth_password" type="password" name="last-name" placeholder="PASSWORD" required>
 								</label>
 								<label>
-									<input type="submit" name="log" value="LOG IN">
+									<input id="auth" type="submit" name="log" value="LOG IN">
 								</label>
 								<p>Lorem ipsum dolor sit amet,<br>
 									consectetur adipisicing elit.
 								</p>
+								<div id="errLogin"></div>
 							</form>
 						</div>
 					</div>
@@ -199,6 +209,7 @@
 		</div>
 	</footer>
 	<script src="./script/main.js"></script>
+	<script src="./script/login.js"></script>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

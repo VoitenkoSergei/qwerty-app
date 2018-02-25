@@ -26,27 +26,6 @@
 						<span>GIVE US A CALL: +38(044)3218906</span>
 					</div>
 					<div class="col-md-4 login">
-						<span>
-							<a href="#" id="upload">LOGIN</a> |
-							<a href="#">REGISTER</a>
-						</span>
-						<div id="login_sub" class="sub">
-							<form>
-								<p>Please enter your Login and Password</p>
-								<label>
-									<input type="text" name="login" placeholder="LOGIN" required>
-								</label>
-								<label>
-									<input type="password" name="last-name" placeholder="PASSWORD" required>
-								</label>
-								<label>
-									<input type="submit" name="log" value="LOG IN">
-								</label>
-								<p>Lorem ipsum dolor sit amet,<br>
-									consectetur adipisicing elit.
-								</p>
-							</form>
-						</div>
 					</div>
 				</div>
 				<div class="row">
@@ -129,18 +108,18 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-12">
-						<form>
+						<form id="register_form">
 							<div class="row">
 								<div class="col-md-6">
 									<p>First Name:</p>
 									<label>
-										<input type="text" placeholder="Enter your name" required>
+										<input id="firstName" type="text" placeholder="Enter your name" required value="Qwerty">
 									</label>
 								</div>
 								<div class="col-md-6">
 									<p>Surname:</p>
 									<label>
-										<input type="text" placeholder="Enter your surname" required>
+										<input id="lastName" type="text" placeholder="Enter your surname" required value="Software">
 									</label>
 								</div>
 							</div>
@@ -148,45 +127,45 @@
 								<div class="col-md-6">
 									<p>Gender:</p>
 									<label>
-										<input type="radio" checked name="gender">male
+										<input type="radio" checked name="gender" value="male">male
 									</label>
 									<label> 
-										<input type="radio" name="gender">famale
+										<input type="radio" name="gender" value="famale">famale
 									</label>
 								</div>
 								<div class="col-md-6">
 									<div class="block_date">
 										<p>Date of Birth:</p>
-										<input type="number" min="1" max="31" class="day" value="1">
-										<select>
-											<option value="">January</option>
-											<option value="">February</option>
-											<option value="">March</option>
-											<option value="">April</option>
-											<option value="">May</option>
-											<option value="">June</option>
-											<option value="">July</option>
-											<option value="">August</option>
-											<option value="">September</option>
-											<option value="">October</option>
-											<option value="">November</option>
-											<option value="">December</option>
+										<input type="number" id="day" min="1" max="31" class="day" value="1">
+										<select id="month">
+											<option value="01">January</option>
+											<option value="02">February</option>
+											<option value="03">March</option>
+											<option value="04">April</option>
+											<option value="05">May</option>
+											<option value="06">June</option>
+											<option value="07">July</option>
+											<option value="08">August</option>
+											<option value="09">September</option>
+											<option value="10">October</option>
+											<option value="11">November</option>
+											<option value="12">December</option>
 										</select>
-										<input type="number" min="1970" max="2010" class="year" value="1970">
+										<input type="number" id="year" min="1970" max="2015" class="year" value="1970">
 									</div>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-6">
-									<p>Username:</p>
+									<p>Login:</p>
 									<label>
-										<input type="text" placeholder="Enter your username" required>
+										<input id="register_login" type="text" placeholder="Enter your login" required value="login_qwerty">
 									</label>
 								</div>
 								<div class="col-md-6">
 									<p>Email:</p>									
 									<label>
-										<input type="email" placeholder="Enter your E-mail" required>
+										<input id="email" type="email" placeholder="Enter your E-mail" required value="testQwerty@gmail.com">
 									</label>
 								</div>
 							</div>
@@ -194,13 +173,13 @@
 								<div class="col-md-6">
 									<p>Password:</p>
 									<label>
-										<input type="password" placeholder="Enter your password">
+										<input id="register_password" type="password" placeholder="Enter your password">
 									</label>
 								</div>
 								<div class="col-md-6">
 									<p>Confirm password:</p>
 									<label>
-										<input type="password" placeholder="Confirm password">
+										<input id="register_confirmation" type="password" placeholder="Confirm password">
 									</label>
 								</div>
 							</div>
@@ -212,11 +191,16 @@
 								</div>
 								<div class="col-md-6">
 									<label>
-										<button type="submit">Register</button>
+										<button id="register" type="submit">Register</button>
 									</label>
 								</div>
 							</div>
 						</form>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div id="result"></div>
 					</div>
 				</div>
 				<div class="row">
@@ -238,7 +222,8 @@
 			</div>
 		</div>
 	</footer>
-	<script src="../script/main.js"></script>
+<!-- 	<script src="../script/main.js"></script> -->
+	<script src="../script/registration.js"></script>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
