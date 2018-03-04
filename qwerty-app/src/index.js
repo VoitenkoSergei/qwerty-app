@@ -1,12 +1,17 @@
-// import React from 'react';
-// import ReactDOM from 'react-dom';
+import React from 'react';
+import ReactDOM from 'react-dom';
 import './index.css';
 import './css/bootstrap.min.css';
 import './css/font-awesome.css';
-import './App.js';
+import App from './App.js';
+import './script/main.js';
+
+
+ReactDOM.render(<App />, document.getElementById('login_sub'));
+
 
 (function(){
-	let formLog = document.querySelector('#login_sub > form'),
+	let formLog = document.getElementById('form'),
 	    authLogin = document.getElementById('auth_login'),
 	    authPassword = document.getElementById('auth_password'),
 	    subLogin = document.getElementById('login_sub'),
