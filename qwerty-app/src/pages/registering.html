@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Features cars</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="icon" type="image/png" href="../images/logo.png">
+</head>
+<body>
+	<div class="wrapper" id="page_register">
+		<header>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="icon">
+							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<div class="col-md-4 tel">
+						<span>GIVE US A CALL: +38(044)3218906</span>
+					</div>
+					<div class="col-md-4 login">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 nav_bar_menu">
+						<nav class="navbar navbar-expand-lg navbar-light">
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<button type="button" id="burger" class="btn btn-info navbar-btn">
+								<i class="glyphicon glyphicon-align-left"></i>
+								SideBar
+							</button>
+							<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+								<ul class="menu">
+									<li><a href="../index.html">HOME</a></li>
+									<li class="sub-menu"><a href="#">CATEGORIES</a>
+										<ul class="main-sub-menu">
+											<li><a href="#">Sport</a></li>
+											<li><a href="#">Retro</a></li>
+											<li><a href="#">Classic</a></li>
+										</ul>
+									</li>
+									<li><a href="#">DEALERS</a></li>
+									<li><a href="#">CONTACT</a></li>
+									<li><a href="#">POST NEW CAR</a></li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="wrapper_sidebar">
+			<nav id="sidebar">
+				<div id="changeView" class="setting">
+					<form>
+						<h3>Settings</h3>
+						<span>Change font size(8-24px):</span>
+						<label>
+							<input type="text" name="size" placeholder="" value="14" maxlength="2" minlength="1">
+						</label>
+						<input type="submit" name="submit" value="ok!" class="submit">
+						<div id="error"></div>
+						<span>Change font family:</span>
+						<label>
+							<select name="family">
+								<option>default</option>
+								<option>Cardo-Regular</option>
+								<option>IndieFlower</option>
+								<option>NovaFlat</option>
+								<option>Courgette</option>
+							</select>
+						</label><br>
+						<span>Change background color:</span>
+						<label>
+							<input type="color" name="color" value="#ffffff">
+						</label><br>
+						<span>Remove last item:</span>
+						<input type="button" name="button" value="Remove">
+						<div id="status"></div>
+					</form>
+				</div>
+			</nav>
+			<div id="content">
+				<section class="registering">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<h1>Registration</h1>
+								<h4>JOIN THE COMMUNITY</h4>
+								<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dignissimos provident officia itaque officiis, enim facere voluptatum ullam corporis iusto.</p>
+								<hr>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+		<section class="registering">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<form id="register_form">
+							<div class="row">
+								<div class="col-md-6">
+									<p>First Name:</p>
+									<label>
+										<input id="firstName" type="text" placeholder="Enter your name" required value="Qwerty">
+									</label>
+								</div>
+								<div class="col-md-6">
+									<p>Surname:</p>
+									<label>
+										<input id="lastName" type="text" placeholder="Enter your surname" required value="Software">
+									</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<p>Gender:</p>
+									<label>
+										<input type="radio" checked name="gender" value="male">male
+									</label>
+									<label> 
+										<input type="radio" name="gender" value="famale">famale
+									</label>
+								</div>
+								<div class="col-md-6">
+									<div class="block_date">
+										<p>Date of Birth:</p>
+										<input type="number" id="day" min="1" max="31" class="day" value="1">
+										<select id="month">
+											<option value="01">January</option>
+											<option value="02">February</option>
+											<option value="03">March</option>
+											<option value="04">April</option>
+											<option value="05">May</option>
+											<option value="06">June</option>
+											<option value="07">July</option>
+											<option value="08">August</option>
+											<option value="09">September</option>
+											<option value="10">October</option>
+											<option value="11">November</option>
+											<option value="12">December</option>
+										</select>
+										<input type="number" id="year" min="1970" max="2015" class="year" value="1970">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<p>Login:</p>
+									<label>
+										<input id="register_login" type="text" placeholder="Enter your login" required value="login_qwerty">
+									</label>
+								</div>
+								<div class="col-md-6">
+									<p>Email:</p>									
+									<label>
+										<input id="email" type="email" placeholder="Enter your E-mail" required value="testQwerty@gmail.com">
+									</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<p>Password:</p>
+									<label>
+										<input id="register_password" type="password" placeholder="Enter your password">
+									</label>
+								</div>
+								<div class="col-md-6">
+									<p>Confirm password:</p>
+									<label>
+										<input id="register_confirmation" type="password" placeholder="Confirm password">
+									</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">		
+									<label>
+										<input type="checkbox" checked>Subscribe now
+									</label>
+								</div>
+								<div class="col-md-6">
+									<label>
+										<button id="register" type="submit">Register</button>
+									</label>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div id="result"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="back_home">
+							<i class="fa fa-hand-o-right" aria-hidden="true"></i>
+							<a href="../index.html">Назад</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<footer>
+		<div class="container-fluid">
+			<div class="row footer_elements">
+				<div class="col-md-6">&copy;Copyright 2018 | Privacy | Policy</div>
+				<div class="col-md-6">Designed for: <span>qwerty.software</span></div>
+			</div>
+		</div>
+	</footer>
+<!-- 	<script src="../script/registration.js"></script> -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

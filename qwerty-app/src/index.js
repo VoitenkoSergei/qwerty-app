@@ -1,5 +1,11 @@
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+import './index.css';
+import './css/bootstrap.min.css';
+import './css/font-awesome.css';
+import './App.js';
+
 (function(){
-	'use strict';
 	let formLog = document.querySelector('#login_sub > form'),
 	    authLogin = document.getElementById('auth_login'),
 	    authPassword = document.getElementById('auth_password'),
@@ -38,9 +44,9 @@
 		if(localStorage.length>0){
 			for(let i=0; i<localStorage.length; i++){
 				let key=localStorage.key(i);
-				if(key.indexOf('user_')==0){
+				if(key.indexOf('user_')===0){
 					objStorage = JSON.parse(localStorage.getItem(key));
-					if(objStorage.login==login.value && objStorage.password==password.value){
+					if(objStorage.login===login.value && objStorage.password===password.value){
 						let user = JSON.stringify(objStorage);
 						localStorage.setItem('currentUser', user)
 						renderName();
@@ -113,7 +119,7 @@
 		objStatus = {status:false};
 		let serial = JSON.stringify(objStatus);
 		localStorage.setItem('status',serial);
-		location.reload();
+		document.location.reload();
 		renderStatus();
 	}	
 	renderStatus();
