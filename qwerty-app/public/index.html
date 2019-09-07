@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Features cars</title>
+  <link rel="icon" type="image/png" href="./pages/images/logo.png">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="icon">
+              <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <div class="col-md-4 tel">
+            <span>GIVE US A CALL: +38(044)3218906</span>
+          </div>
+          <div class="col-md-4 login">
+            <div id="login">
+            <span>
+              <a href="#" id="upload">LOGIN</a> |
+            </span>
+            <span>
+              <a href="./pages/registering.html">REGISTER</a>
+            </span>
+          </div>
+            <div id="logout">
+              <span>
+              <a href="#" id="out">LOGOUT</a> | 
+              </span>
+            </div>
+            <div id="login_sub" class="sub">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 nav_bar_menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <button type="button" id="burger" class="btn btn-info navbar-btn">
+                <i class="glyphicon glyphicon-align-left"></i>
+                SideBar
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="menu">
+                  <li><a href="#">HOME</a></li>
+                  <li class="sub-menu"><a href="#">CATEGORIES</a>
+                    <ul class="main-sub-menu">
+                      <li><a href="#">Sport</a></li>
+                      <li><a href="#">Retro</a></li>
+                      <li><a href="#">Classic</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">DEALERS</a></li>
+                  <li><a href="#">CONTACT</a></li>
+                  <li><a href="#">POST NEW CAR</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper_sidebar">
+      <nav id="sidebar">
+        <div id="changeView" class="setting">
+          <form>
+            <h3>Settings</h3>
+            <span>Change font size(8-24px):</span>
+            <label>
+              <input type="text" name="size" placeholder="" value="14" maxlength="2" minlength="1">
+            </label>
+            <input type="submit" name="submit" value="ok!" class="submit">
+            <div id="error"></div>
+            <span>Change font family:</span>
+            <label>
+              <select name="family">
+                <option>default</option>
+                <option>Cardo-Regular</option>
+                <option>IndieFlower</option>
+                <option>NovaFlat</option>
+                <option>Courgette</option>
+              </select>
+            </label><br>
+            <span>Change background color:</span>
+            <label>
+              <input type="color" name="color" value="#ffffff">
+            </label><br>
+            <span>Remove last item:</span>
+            <input type="button" name="button" value="Remove">
+            <div id="status"></div>
+          </form>
+        </div>
+      </nav>
+      <div id="content">
+        <section class="presentation">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12">
+                <img src="./pages/images/logo.png" alt="logo">
+                <h1>Porshe 356</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Molestias nostrum, incidunt voluptas obcaecati numquam.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <section class="features">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>&bull; FEATURES CARS &bull;</h2>
+          </div>
+        </div>
+        <div class="row cars">
+          <div class="col-md-3"></div>
+          <div class="col-md-3">
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, eius, assumenda.</p>
+            <h4>Price &euro;</h4>
+            <div>
+              <a href="#">READ MORE</a>
+            </div>
+          </div>
+          <div class="col-md-3"></div>
+          <div class="col-md-3">
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, eius, assumenda.</p>
+            <h4>Price &euro;</h4>
+            <div>
+              <a href="#">READ MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="row newsletter">
+          <div class="col-md-6">
+            <h3>NEWSLETTER</h3>
+            <p>SUBSCRIBE Lorem ipsum dolor sit amet, <br>
+              consectetur adipisicing elit. Velit, id! Unde dolorem mollitia <br>
+            ipsa a animi officiis soluta ad dolores!</p>
+          </div>
+          <div class="col-md-6 subscribe">
+            <form>
+              <label>
+                <input type="email" name="email" value="EMAIL" required>
+              </label>
+              <button type="submit">SUBSCRIBE</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="map">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 map_width">
+            <h2>&bull; LOCATION &bull;</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15593.521453815272!2d35.141900901781185!3d47.837714582150554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1517164838200" width="600" height="450" style="border:0"></iframe>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 logo_image">
+            <img src="./pages/images/collectionlogo1.png" alt="collectionlogo">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 small">
+            <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Dolorum expedita dicta est fugit quos tenetur excepturi laudantium minima cupiditate dolores.</small>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <div class="container-fluid">
+      <div class="row footer_elements">
+        <div class="col-md-6">&copy;Copyright 2018 | Privacy | Policy</div>
+        <div class="col-md-6">Designed for: <span>qwerty.software</span></div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
